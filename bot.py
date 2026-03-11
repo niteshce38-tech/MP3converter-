@@ -21,7 +21,7 @@ def keep_alive():
 TOKEN = "8671935397:AAH1EP3e3rJwgzpGj3D-wUhZ6NVigSalHdQ"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("👋 **Techverse Insta-MP3 Bot** ready hai!\n\nBas Instagram Reel ka link bhejo aur MP3 pao.")
+    await update.message.reply_text("👋 **Insta-MP3 Bot** ready hai!\n\nBas Instagram Reel ka link bhejo aur MP3 pao.")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text
@@ -59,7 +59,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         
         await update.message.reply_audio(
             audio=open(file_path, 'rb'), 
-            caption="Downloaded by @Techverse"
+            caption="Join @onlineDeals25"
         )
         await wait_msg.delete()
         os.remove(file_path)
